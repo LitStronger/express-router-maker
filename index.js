@@ -22,7 +22,7 @@ const makePostHandle = makeHandle('body')
 const makeHandles = (method) =>
   method === 'get'
     ? makeGetHandle()
-    : makePostHandle
+    : makePostHandle()
 
 const makeRouter = (controller) => {
   const express = require('express')
